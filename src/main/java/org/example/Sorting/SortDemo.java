@@ -2,7 +2,6 @@ package org.example.Sorting;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 import java.util.Scanner;
 
 public class SortDemo {
@@ -25,8 +24,8 @@ public class SortDemo {
         System.out.println();
         int x = sc.nextInt();
         System.out.println("Enter the elements of the array: ");
-        Integer[] arr2= new Integer[n];
-        for (int i = 0; i < n; i++) {
+        Integer[] arr2= new Integer[x];
+        for (int i = 0; i < x; i++) {
             arr2[i] = sc.nextInt();
         }
         System.out.println("Before sorting : "+Arrays.toString(arr2));
