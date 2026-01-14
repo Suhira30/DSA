@@ -31,12 +31,22 @@ public class BubbleSort {
         boolean flag = false;
         for (int i = 0; i < arr.length - 1; i++) {
             for (int j = 0; j < arr.length - 1; j++) {
+                //way 1:
                 if (arr[j] > arr[j + 1]) {
                     int temp = arr[j];
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
                     flag = true;
                 }
+                //way 2:
+                /* without creating temp variable using XOR */
+//                if (arr[j] > arr[j + 1]) {
+//                    arr[j] = arr[i]^arr[j + 1];
+//                    arr[j + 1] = arr[j + 1]^arr[j];
+//                    arr[j] = arr[i]^arr[j + 1];
+//                    flag = true;
+//                }
+
                 if(!flag)
                     break;
             }
