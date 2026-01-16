@@ -19,7 +19,7 @@ public class SelectionSort {
         }
         System.out.println("After Selection Sort using add & remove : " + Arrays.toString(myArray.toArray()));
     }
-    //way 2:
+    //way 2: GOOD way
     public void selectionSorting(Integer[] array){
         System.out.println("Before sorting : " + Arrays.toString(array));
         for (int i = 0; i < (array.length - 1); i++) {
