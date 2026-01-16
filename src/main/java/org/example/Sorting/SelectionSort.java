@@ -19,4 +19,23 @@ public class SelectionSort {
         }
         System.out.println("After Selection Sort : " + Arrays.toString(myArray.toArray()));
     }
+    //way 2:
+    public void selectionSorting(Integer[] array){
+        System.out.println("Before sorting : " + Arrays.toString(array));
+        for (int i = 0; i < (array.length - 1); i++) {
+            int minIndex = i;
+            for (int j = i + 1; j < (array.length - 1); j++) {
+                if (array[j] < array[minIndex]) {
+                    minIndex = j;
+                }
+            }
+            if(minIndex != i){
+                int temp = array[minIndex];
+                array[minIndex]=array[i];
+                array[i]=temp;
+            }
+        }
+        System.out.println("After Selection Sort : " + Arrays.toString(array));
+    }
+
 }
