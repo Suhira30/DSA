@@ -10,7 +10,7 @@ public class BubbleSort {
         System.out.println("Array: " + Arrays.toString(arr));
         Instant start = Instant.now();
         for (int i = 0; i < arr.length - 1; i++) {
-            for (int j = 0; j < arr.length - 1; j++) {
+            for (int j = 0; j < arr.length -i- 1; j++) {
                 if (arr[j] > arr[j + 1]) {
                     int temp = arr[j];
                     arr[j] = arr[j + 1];
@@ -33,7 +33,7 @@ public class BubbleSort {
         Instant start = Instant.now();
         boolean flag = false;
         for (int i = 0; i < arr.length - 1; i++) {
-            for (int j = 0; j < arr.length - 1; j++) {
+            for (int j = 0; j < arr.length - i-1; j++) {
                 //way 1:
                 if (arr[j] > arr[j + 1]) {
                     int temp = arr[j];
