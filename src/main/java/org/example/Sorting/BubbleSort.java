@@ -28,6 +28,7 @@ public class BubbleSort {
 
     /*If the algorithm goes through the array one time without swapping any values,
     the array must be finished sorted, and we can stop the algorithm */
+    //Way 2: GOOD way
     public void sortingWithImprovement(int[] arr) {
         System.out.println("Array: " + Arrays.toString(arr));
         Instant start = Instant.now();
