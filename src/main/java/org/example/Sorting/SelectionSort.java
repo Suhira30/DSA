@@ -17,7 +17,7 @@ public class SelectionSort {
             Integer minvalue=myArray.remove(minIndex);
             myArray.add(i, minvalue);
         }
-        System.out.println("After Selection Sort : " + Arrays.toString(myArray.toArray()));
+        System.out.println("After Selection Sort using add & remove : " + Arrays.toString(myArray.toArray()));
     }
     //way 2:
     public void selectionSorting(Integer[] array){
