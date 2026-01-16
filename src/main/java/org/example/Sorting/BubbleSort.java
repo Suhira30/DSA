@@ -7,6 +7,7 @@ import java.util.Arrays;
 public class BubbleSort {
 
     public void sorting(int[] arr) {
+        System.out.println("Array: " + Arrays.toString(arr));
         Instant start = Instant.now();
         for (int i = 0; i < arr.length - 1; i++) {
             for (int j = 0; j < arr.length - 1; j++) {
@@ -18,6 +19,7 @@ public class BubbleSort {
 
             }
         }
+
         System.out.println("Sorted Array: " + Arrays.toString(arr));
         Instant end = Instant.now();
         Duration duration = Duration.between(start, end);
@@ -27,6 +29,7 @@ public class BubbleSort {
     /*If the algorithm goes through the array one time without swapping any values,
     the array must be finished sorted, and we can stop the algorithm */
     public void sortingWithImprovement(int[] arr) {
+        System.out.println("Array: " + Arrays.toString(arr));
         Instant start = Instant.now();
         boolean flag = false;
         for (int i = 0; i < arr.length - 1; i++) {
