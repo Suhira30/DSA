@@ -1,7 +1,5 @@
 package org.example.Array;
 
-import java.util.Scanner;
-
 public class ArrayQuestion01 {
 
 public static void main(String[] args) {
