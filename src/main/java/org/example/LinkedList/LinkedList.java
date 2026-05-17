@@ -86,4 +86,16 @@ public class LinkedList {
 //         }
 //    }
 
+    //Find lowest value
+    public int lowestValue(){
+         int min=head.data;
+         Node temp=head;
+         while(temp!=null){
+             if(temp.data<min){
+                 min=temp.data;
+             }
+             temp=temp.next;
+         }
+         return min;
+    }
 }
