@@ -18,7 +18,7 @@ public class LinkedListDemo {
         list.Display();
 
         System.out.println();
-        list.insertAtPos(0,0);
+        list.insertAtPos(40,0);
         list.insertAtPos(1000,1);
         list.insertAtPos(10,0);
         list.insertAtPos(500,2);
@@ -35,6 +35,8 @@ public class LinkedListDemo {
         System.out.print("Delete at Pos: ");
         list.Display();
 
+        System.out.println();
+        System.out.println(list.lowestValue());
 
     }
 }
