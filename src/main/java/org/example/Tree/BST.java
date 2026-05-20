@@ -37,4 +37,28 @@ public class BST {
         }
         return search(root.right, data);
     }
+
+    //Find min
+    public int minimum(Node root) {
+        if (root == null) {
+            System.out.println("root is null");
+            return 0;
+        }
+        while(root.left!=null){
+            root=root.left;
+        }
+        return root.data;
+    }
+
+    //Find max
+    public int maximum(Node root) {
+        if (root == null) {
+            System.out.println("root is null");
+            return 0;
+        }
+        while(root.right!=null){
+            root=root.right;
+        }
+        return root.data;
+    }
 }
