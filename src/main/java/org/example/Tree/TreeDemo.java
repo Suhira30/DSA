@@ -4,6 +4,7 @@ public class TreeDemo {
 
     public static void main(String[] args) {
         Tree tree = new Tree();
+
         //Binary Tree
         tree.root = new Node(1);
         tree.root.left = new Node(2);
@@ -42,5 +43,13 @@ public class TreeDemo {
         System.out.println();
         System.out.println("Max value in the tree : " + bst.maximum(bst.root));
 
+        //Deletion
+        System.out.println();
+
+        Node deletedNode = bst.delete(bst.root, 30);
+        System.out.println("Node deleted:" + deletedNode.data);
+
+        System.out.println();
+        bst.inOrder(bst.root);
     }
 }
