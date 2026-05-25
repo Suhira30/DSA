@@ -1,6 +1,6 @@
 package org.example.recursion;
 
-public class powerOfElement {
+public class powerOfElementDemo {
 public static void main(String[] args) {
     System.out.println(powerOfElement(2,3));
 }
